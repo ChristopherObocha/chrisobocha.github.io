@@ -1,0 +1,89 @@
+<!-- This line is a comment, it is not executed by the computer and it is used to explain the code. Good code always has a lot of comments so that other programmers can read and understand the code -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- line 2 tells the computer that we are coding in HTML5. That is the latest version of HTML. 
+  Line 3 tells it that we are coding in English. The lang="en" is not necessary -->
+
+  <head>
+        <!-- This is the head tag. It contains all the metadata and other information with regards to your site.  -->
+        <meta charset="utf-8">
+        <!-- <meta> tags line 9 always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Line 11 makes sure your website looks good on all devices. The screen display is what is called a "viewport" 
+        The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+        The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+        -->
+        <title>Anthony's Website</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <!-- the header tag is used as a placeholder for all the heading aspects of the website. Things like the logo, website name, navigation links, and generally, the first thing we see -->
+      <div class="container container-nav">
+        <!-- a div tag is used to create a block of code. Usually for logical purposes; like parts of the website that logically belong together or will share similar styling.
+        this div has two classes, the first one is the container class, the second is container-nav class. To add more classes just put a space. -->
+        <div class="site-title">
+          <!-- this div is for the website's title -->
+          <h1>Christopher's Love of Nature</h1>
+          <p class="subtitle">A blog on exploring the beauty in nature</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <a> is an anchor tag, used to 'anchor' (link) other documents to your website. href="source"; the href is used to reference the source of the link (where we want to be directed to). Since we are just starting, we will link it to a dead site, that's by putting the hashtag symbol # -->
+            <li><a class="current-page" href="about.html">About</a></li>
+            <li><a href="recent-posts.html">Recent posts</a></li>
+          </ul>
+        </nav>
+      </div>  <!-- This is the end of our container div -->
+    </header>  <!-- This is the end of our header and everything we want on the headerr. We kept it simple so it's just the title text and navigation links -->
+
+
+    <div class="container container-flex">
+      <!-- notice, we are using the container class again. That's because we want to create sections that all have the same default style -->
+      <main role="main">
+        <img src="img/img-about-me-3.JPG" class="image-full">
+        <h2>My name is Chris and I'm in love with nature</h2>
+
+        <p><strong>I am recent graduate of Computer Science</strong>, from the prestigious Babcock University. I was born and I live in one of the poorer areas of Lagos, however, I am blessed to have attended one of the most expensive universities in Nigeria and this duality exposed me to one of the most unique experiences in my life and it is a major proponent in my ambitions to connect people of different backgrounds and to improve life for all through tech.   
+        </p>
+
+        <h3>My Drive</h3>
+        <p>Traversing through the dualities of rich and poor, I developed a strong interest in wealth gaps and how it affects or its effects on cultural and economic differences. Moved by my experiences, I constantly try to infuse my love for differing fields like history, geography, media to my love for tech. I decided to major in Computer Science as my first degree because I believe in foundational knowledge and I believe that tech is the future and positively harnessing its capabilities can greatly benefit humanity. </p>
+
+        <h3>My goals</h3>
+
+        <p>I propose the following objectives. First, I want to gain firm knowledge of applying  the engineering principles to software development. Secondly, I want to learn processes, methodologies, tools which will allow me to deliver tech in impactful ways to society. Finally, I want to obtain the practical ability to manage projects and communication skills to build strong relationships with clients and the world in general.  
+        </p>
+
+        <p>To achieve my goals, it is imperative that I acquire a profound knowledge of innovation and management while developing both professional and research skills.</p>
+
+
+      </main>
+      <aside class="sidebar"> 
+
+        <div class="sidebar-widget">
+          <h2 class="widget-title">RECENT POSTS</h2>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">Peace in the setting sun</h3>
+            <img src="img/img-pink-skyline.JPG" alt="a blueish orange sunset" class="widget-image">
+          </div>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">The flowing waters</h3>
+            <img src="img/img-blue-river.JPG" alt="a blue river" class="widget-image">
+          </div>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">Mountain Twilights</h3>
+            <img src="img/img-mountain-twilight.JPG" alt="a blue river" class="widget-image">
+          </div>
+        </div>       
+      </aside>
+    </div>  
+    
+    <footer>
+      <p>Living the simple life, <strong>embracing nature.</strong></p>
+      <p>&copy Christopher 2020</p>
+    </footer>
+  </body>
+</html>
